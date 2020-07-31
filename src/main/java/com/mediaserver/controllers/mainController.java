@@ -25,7 +25,7 @@ public class mainController
         return "hi";
     }
 
-    @RequestMapping("getvideolist")
+    @RequestMapping("/getvideolist")
     public ModelAndView listFiles(ModelMap map) throws IOException
     {
         Stream<Path> list = Files.list(Paths.get("F://resources//video"));
